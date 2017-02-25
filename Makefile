@@ -26,7 +26,7 @@ OBJS := \
 	main.o
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -mavx2 -c -o $@ $<
 
 
 $(EXEC): $(OBJS)
